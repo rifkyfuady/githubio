@@ -7,7 +7,8 @@ draft: false
 type: post
 
 tags:
-    - tag
+    - flutter
+    - android
 
 image: ""
 description: ""

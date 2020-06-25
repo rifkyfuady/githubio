@@ -7,7 +7,7 @@ draft: false
 type: post
 
 tags:
-    - tag
+    - programmer
 
 image: ""
 description: ""

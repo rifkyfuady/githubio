@@ -7,7 +7,8 @@ draft: false
 type: post
 
 tags:
-    - tag
+    - flutter
+    - android
 
 image: ""
 description: ""
@@ -422,4 +423,4 @@ Selesai. sekarang jalankan aplikasi `Dragon Ball` dengan menekan tombol F5, namu
 
 Hasilnya akan terlihat seperti berikut ini:
 
-<img data-src="/img/flutter-animasi-dragonball/dragon-ball.gif" class="lazyload" />
+![gambar](/images/flutter-animasi-dragonball/dragon-ball.gif)

@@ -7,7 +7,8 @@ draft: false
 type: post
 
 tags:
-    - tag
+    - flutter
+    - android
 
 image: ""
 description: ""
@@ -411,11 +412,11 @@ class MyApp extends StatelessWidget {
 
 Selesai. sekarang jalankan aplikasi `Toko Buku` dengan menekan tombol F5, namun sebelumnya jangan lupa start Android Emulator atau iOS Simulator.
 
-<img data-src="/img/toko-buku-flutter/1.png" class="lazyload" />
+![gambar](/images/toko-buku-flutter/1.png)
 
 
 Hasilnya akan terlihat seperti berikut ini:
 
-<img data-src="/img/toko-buku-flutter/2.png" class="lazyload" />
+![gambar](/images/toko-buku-flutter/2.png)
 
-<img data-src="/img/toko-buku-flutter/3.png" class="lazyload" />
+![gambar](/images/toko-buku-flutter/3.png)

@@ -7,7 +7,8 @@ draft: false
 type: post
 
 tags:
-    - tag
+    - flutter
+    - android
 
 image: ""
 description: ""
@@ -32,7 +33,7 @@ Bikin aplikasi zaman sekarang mudah, tinggal gabung-gabungin aja library/plugin 
 
 Langkah pertama, jalankan editor VS Code, selanjutnya buat projek baru dengan menekan kombinasi tombol `CTRL+SHIFT+P` dan tulis nama projeknya misalnya `pemutar_musik`. Untuk nama aplikasi harus huruf kecil semua dan tidak boleh mengandung spasi. 
 
-<img data-src="/img/pemutar-musik-flutter/1.png" class="lazyload" />
+![gambar](/images/pemutar-musik-flutter/1.png)
 
 Kemudian edit file `pubspec.yaml`, tambahkan plugin yang kita butuhkan tadi. Berikut ini `snippet code`-nya :
 
@@ -864,7 +865,7 @@ Langkah terakhir kita menambahkan permission, edit file `android/app/src/main/An
 <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
 ```
 
-<img data-src="/img/pemutar-musik-flutter/2.png" class="lazyload" />
+![gambar](/images/pemutar-musik-flutter/2.png)
 
 Agar lebih jelas bisa melihat gambar diatas.
 
@@ -872,9 +873,9 @@ Agar lebih jelas bisa melihat gambar diatas.
 
 Setelah selesai semua, sekarang saatnya menjalankan aplikasi `Pemutar Musik` dengan menekan tombol F5, namun sebelumnya jangan lupa start Android Emulator atau iOS Simulator.
 
-<img data-src="/img/pemutar-musik-flutter/3.png" class="lazyload" />
+![gambar](/images/pemutar-musik-flutter/3.png)
 
 
 Hasilnya akan terlihat seperti berikut ini:
 
-<img data-src="/img/pemutar-musik-flutter/4.png" class="lazyload" />
+![gambar](/images/pemutar-musik-flutter/4.png)

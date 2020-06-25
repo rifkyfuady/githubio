@@ -3,6 +3,10 @@ title: "Hello Word, Hello Hugo! (Ngeblog dari Teks Editor dan Terminal ala Progr
 slug: hello-word
 date: 2019-03-12T17:29:51+07:00
 draft: false
+tags:
+    - hugo
+    - blog
+    - golang
 meta:
     image: ""
     description: ""
@@ -37,9 +41,9 @@ Menurut klaim mereka *(developer `Hugo`)*, `Hugo` lebih cepat daripada `SSG` yan
 Selain *cepat*, `Hugo` juga mudah dipelajari. Meskipun saya belum mengerti bahasa pemrograman `Go`.
 
 Ini adalah tulisan pertama di blog ini. Baru saja saya membuat blog
-dengan Hugo. Sekarang lagi dikembangkan dengan tema [Hugo Bootstrap v4 Blog](https://github.com/alanorth/hugo-theme-bootstrap4-blog).
+dengan Hugo. Sekarang lagi dikembangkan dengan tema [Hugo Themes Anatole](https://github.com/lxndrblz/anatole).
 
-Deploy saya lakukan ke Github Pages dengan dua repositori terpisah. Pertama, repositori [blog](https://github.com/rifkyfu32/blog) untuk menyimpan konten, kemudian repositori [rifkyfu32.github.io](https://github.com/rifkyfu32/rifkyfu32.github.io) untuk menyimpan halaman publik hasil render dari Hugo.
+Deploy saya lakukan ke Github Pages dengan dua repositori terpisah. Pertama, repositori [blog](https://github.com/rifkyfuady/githubio) untuk menyimpan konten, kemudian repositori [rifkyfuady.github.io](https://github.com/rifkyfuady/rifkyfuady.github.io) untuk menyimpan halaman publik hasil render dari Hugo.
 
 Saya menggunakan skrip dari [dokumentasi Hugo](https://gohugo.io/tutorials/github-pages-blog/) untuk melakukan deploy.
 Karena saya tidak menggunakan _Continous Integration_ (CI). Jadi setiap

@@ -7,7 +7,10 @@ draft: false
 type: post
 
 tags:
-    - tag
+    - hugo
+    - blog
+    - golang
+    - github
 
 image: ""
 description: ""
@@ -45,17 +48,17 @@ Buatlah dua repositori di Github dengan nama seperti berikut ini.
 
 Saat membut repository, jangan centang **Initalize this repository with README.md** agar kosong.
 
-<img data-src="/img/hugo-deploy-github/1.png" class="lazyload" />
+![gambar](/images/hugo-deploy-github/1.png)
 
 
 Repositori `blog` berfungsi untuk menyimpan semua file Hugo (proyek hugo). Repository ini bisa kita gunakan untuk back-up.
 
-<img data-src="/img/hugo-deploy-github/2.png" class="lazyload" />
+![gambar](/images/hugo-deploy-github/2.png)
 
 
 Sementara repositori `username.github.io` untuk menyimpan file yang ada di `public` atau hasil *render* dari Hugo.
 
-<img data-src="/img/hugo-deploy-github/3.png" class="lazyload" />
+![gambar](/images/hugo-deploy-github/3.png)
 
 Semua file statis yang ada di repository `username.github.io` akan bisa diakses melalui `https://username.github.io`.
 
@@ -99,7 +102,7 @@ git remote add origin git@github.com:{username}/{nama-repo}.git
 
 Atau kalau tidak mau repot, URL-nya bisa di-copy dari repo Github-nya.
 
-<img data-src="/img/hugo-deploy-github/4.png" class="lazyload" />
+![gambar](/images/hugo-deploy-github/4.png)
 
 
 ## 3. Upload ke Github
@@ -222,7 +225,7 @@ chmod +x deploy.sh
 
 Nah, kita bisa melakukan deploy dengan skrip tersebut. Setiap kali kita ingin meng-update blog, kita cukup menjalankan skrip itu saja.
 
-<img data-src="/img/hugo-deploy-github/5.png" class="lazyload" />
+![gambar](/images/hugo-deploy-github/5.png)
 
 
 Kita juga bisa menambahkan pesan commit-nya:

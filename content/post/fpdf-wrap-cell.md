@@ -7,7 +7,7 @@ draft: false
 type: post
 
 tags:
-    - tag
+    - php
 
 image: ""
 description: ""
@@ -27,7 +27,7 @@ Disini saya hanya akan memberikan `snippet code`, berbagi cara agar output tabel
 
 Berikut ini adalah contoh output masalah yang saya hadapi tadi sore :
 
-<img data-src="/img/fpdf-wrap-cell/1.png" class="lazyload" />
+![gambar](/images/fpdf-wrap-cell/1.png)
 
 Terlihat jelas, kolom pesan terlalu panjang isinya sehingga terpotong, ini terjadi karena saya hanya menggunakan fungsi `$pdf->Cell`. Berikut saya lampirkan `snippet code`-nya :
 
@@ -46,7 +46,7 @@ Kemudian seperti biasa, saya bertanya kepada mbah dukun terhebat saya, **`Stacko
 
 Gak pake lama, langsung saya coba dan hasilnya :
 
-<img data-src="/img/fpdf-wrap-cell/2.png" class="lazyload" />
+![gambar](/images/fpdf-wrap-cell/2.png)
 
 Haduuuhhh kok malah jadi berantakan, berikut `snippet code`-nya :
 
@@ -65,7 +65,7 @@ Tapi kalo dilihat-lihat dan agak sedikit dipikir, hhmmm... sepertinya gak bisa m
 
 Merenung sejenak, `try-error-learn` berulang-ulang muter otak sampe semedi nongkrong di kamar mandi, dan akhirnya... taraaaa...
 
-<img data-src="/img/fpdf-wrap-cell/3.png" class="lazyload" />
+![gambar](/images/fpdf-wrap-cell/3.png)
 
 Maka, benar sabda `Kakek Bijak` :
 

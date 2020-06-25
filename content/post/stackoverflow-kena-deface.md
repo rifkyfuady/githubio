@@ -7,7 +7,7 @@ draft: false
 type: post
 
 tags:
-    - tag
+    - stackoverflow
 
 image: ""
 description: ""
@@ -15,13 +15,13 @@ description: ""
 
 Ada yang aneh dengan tampilan web [Stack Overflow](https://meta.stackoverflow.com) hari ini, yaitu tanggal 1 April 2019.
 
-<img data-src="/img/stackoverflow-kena-deface/1.png" class="lazyload" />
+![gambar](/images/stackoverflow-kena-deface/1.png)
 
 Sebagai informasi menurut saya, [Stack Overflow](https://stackoverflow.com/) adalah alat yang sangat dibutuhkan untuk progammer di seluruh dunia selama bertahun-tahun. Progammer tahu bahwa ketika mereka menemukan masalah saat membangun aplikasi, mereka akan mencari tahu kemudian mendapatkan hasil pencarian jawaban dari `Stack Overflow`, kemungkinan pencarian solusi untuk masalahnya berakhir. Di `Stack Overflow`, mereka dapat bertanya dan meminta solusi beberapa ke developer di seluruh dunia secara langsung. Sulit membayangkan bagaimana rasanya menulis kode sebelum `Stack Overflow` dibuat lebih dari satu dekade lalu di tahun 2008.
 
 Jika ada programmer sebelum era BSO (Before Stack Overflow), Programmer tersebut tidak tahu seperti apa zaman keemasan yang kita jalani sekarang. Bukan karena informasi itu tidak tersedia sama sekali, tetapi sulit untuk menemukan informasi yang tepat dan efisien.
 
-<img data-src="/img/stackoverflow-kena-deface/2.png" class="lazyload" />
+![gambar](/images/stackoverflow-kena-deface/2.png)
 
 Pada masa itu para programmer menggunakan berbagai sumber alat seperti [AltaVista](https://en.wikipedia.org/wiki/AltaVista), [WebCrawler](https://en.wikipedia.org/wiki/WebCrawler), [ICQ](https://en.wikipedia.org/wiki/ICQ), [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat), [LISTSERV](https://en.wikipedia.org/wiki/LISTSERV), [Usenet](https://en.wikipedia.org/wiki/Usenet), [man](https://en.wikipedia.org/wiki/Man_page) dan bahkan [O'Reilly](https://en.wikipedia.org/wiki/Tim_O%27Reilly) untuk menemukan jawaban.
 
@@ -35,10 +35,10 @@ Untuk tahun 2019, temanya adalah `Back to the Future!`, Yaps, secara teknis sepe
 
 Dibawah sebelum footer juga ada `Guest Book` / buku tamu, yeah semakin menambah cita rasa kenangan masa lalu, dulu saya menggunakan ini di dalam blog :joy: .
 
-<img data-src="/img/stackoverflow-kena-deface/3.png" class="lazyload" />
+![gambar](/images/stackoverflow-kena-deface/3.png)
 
 **Ingin kembali ke masa depan?**
 
 Cukup klik pada ikon `jam` di sebelah ikon keranjang notifikasi di bar bagian atas dan akan kembali ke masa depan, eh, sekarang. 
 
-<img data-src="/img/stackoverflow-kena-deface/4.png" class="lazyload" />
+![gambar](/images/stackoverflow-kena-deface/4.png)

@@ -7,7 +7,8 @@ draft: false
 type: post
 
 tags:
-    - tag
+    - flutter
+    - android
 
 image: ""
 description: ""
@@ -47,19 +48,19 @@ Pertama-tama siapkan beberapa asset untuk gambar foto profil, logo, dan font.
 
 Jalankan editor VS Code, Selanjutnya buat projek baru dengan menekan kombinasi tombol `CTRL+SHIFT+P` dan tulis nama projeknya misalnya `login_cantik`. Untuk nama aplikasi harus huruf kecil semua dan tidak boleh mengandung spasi.
 
-<img data-src="/img/flutter-login-ciamik/1.png" class="lazyload" />
+![gambar](/images/flutter-login-ciamik/1.png)
 
 
 Selanjutnya buat folder `assets` pada direktori projek dan salin semua file persiapan (profil.jpg, butterfly.png, nunito.ttf) ke dalam folder `assets` tersebut.
 
-<img data-src="/img/flutter-login-ciamik/2.png" class="lazyload" />
+![gambar](/images/flutter-login-ciamik/2.png)
 
-<img data-src="/img/flutter-login-ciamik/3.png" class="lazyload" />
+![gambar](/images/flutter-login-ciamik/3.png)
 
 
 File-file ini harus dijelaskan terlebih dahulu pada file `pubspec.yaml` agar dapat digunakan, tambahkan baris berikut ini tepat di bawah konfigurasi `flutter` seperti ini.
 
-<img data-src="/img/flutter-login-ciamik/4.png" class="lazyload" />
+![gambar](/images/flutter-login-ciamik/4.png)
 
 ```bash
 flutter:
@@ -290,12 +291,12 @@ class MyApp extends StatelessWidget {
 
 Selesai. sekarang jalankan aplikasi Flutter dengan menekan tombol F5 namun sebelumnya jangan lupa start Android Emulator atau iOS Simulator. 
 
-<img data-src="/img/flutter-login-ciamik/5.png" class="lazyload" />
+![gambar](/images/flutter-login-ciamik/5.png)
 
 
 Hasilnya akan terlihat seperti berikut ini:
 
-<img data-src="/img/flutter-login-ciamik/6.png" class="lazyload" />
+![gambar](/images/flutter-login-ciamik/6.png)
 
-<img data-src="/img/flutter-login-ciamik/7.png" class="lazyload" />
+![gambar](/images/flutter-login-ciamik/7.png)
 

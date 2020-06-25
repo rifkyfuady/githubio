@@ -7,7 +7,10 @@ draft: false
 type: post
 
 tags:
-    - tag
+    - hugo
+    - golang
+    - pwa
+    - blog
 
 image: ""
 description: ""
@@ -448,9 +451,9 @@ Sekarang situs kita secara otomatis menjadi PWA. Sangat mudah bukan?
 
 Untuk mengujinya, bila menggunakan browser Google Chrome, kita dapat memanfaatkan [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/) untuk memantau aktivitas aplikasi webmu. Kamu dapat menampilkan DevTools pada browser Chrome dengan menekan tombol keyboard Ctrl+Shift+i atau mengklik kanan pada layar browser dan memilih opsi Inspect pada menu popup.
 
-<img data-src="/img/membuat-blog-pwa/1.png" class="lazyload" />
+![gambar](/images/membuat-blog-pwa/1.png)
 
 Pada tab Aplikasi, kita bisa melihat detail yang disediakan dalam manifes termasuk ikon yang berbeda. Kita juga akan melihat berbagai file yang kita tentukan di bagian Penyimpanan Cache.
 
 Buka tab Audit dan lakukan audit Lighthouse dan lihat hasilnya.
-<img data-src="/img/membuat-blog-pwa/2.png" class="lazyload" />
+![gambar](/images/membuat-blog-pwa/2.png)

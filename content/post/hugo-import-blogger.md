@@ -3,6 +3,10 @@ title: "Mudahnya Mengisi Artikel Hugo dari Blogger"
 slug: hugo-import-blogger
 date: 2019-03-12T22:18:15+07:00
 draft: false
+tags:
+    - hugo
+    - blog
+    - golang
 meta:
     image: ""
     description: ""
@@ -26,7 +30,7 @@ Kemudian lakukan langkah-langkah berikut ini.
 
 Pertama, kita perlu mengekspor dulu konten yang ada di blogger. Masuk ke Settings>Other kemudian klik Back up Content
 
-<img data-src="/img/hugo-import-blogger/1.png" class="lazyload" />
+![gambar](/images/hugo-import-blogger/1.png)
 
 Kita akan mendapatkan file .xml, nah file ini nanti yang akan kita ekstrak isinya menjadi format markdown.
 
@@ -61,6 +65,6 @@ go run main.go ~/Downloads/blog-03-12-2019.xml artikel
 
 Setelah itu, coba periksa direktori artikel.
 
-<img data-src="/img/hugo-import-blogger/2.png" class="lazyload" />
+![gambar](/images/hugo-import-blogger/2.png)
 
 Selanjutnya, kita bisa pindahkan semua file markdown ini ke direktori content di Hugo.

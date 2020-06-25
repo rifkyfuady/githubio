@@ -7,13 +7,15 @@ draft: false
 type: post
 
 tags:
-    - tag
+    - flutter
+    - reactnative
+    - android
 
 image: ""
 description: ""
 ---
 
-<img data-src="/img/native-webview-reactive-flutter/1.png" class="lazyload" />
+![gambar](/images/native-webview-reactive-flutter/1.png)
 
 Ketika saya `showoff` aplikasi yang saya buat dengan flutter di sosial media, ada salah seorang teman dari kampus bertanya :
 
@@ -27,7 +29,7 @@ Sebelum menjawab itu, mungkin alangkah lebih baik saya memberikan sedikit inform
 
 Mungkin yang teman saya sebut `android native` itu maksudnya adalah `Native languages`. Berikut gambaran-nya :
 
-<img data-src="/img/native-webview-reactive-flutter/2.png" class="lazyload" />
+![gambar](/images/native-webview-reactive-flutter/2.png)
 
 Aplikasi yang dibuat menggunakan `native language` memungkinkan berkomunikasi untuk membuat widget, atau mengakses service seperti kamera, gps, dll. Widget tersebut lalu ditampilkan. Karena menggunakan bahasa bawaan os, maka aplikasi yang dibangun untuk `beda` os harus dibuat ulang. 
 
@@ -35,7 +37,7 @@ Ketika kita sudah bikin aplikasi `Android` dengan `native language` misal [Java 
 
 **WebViews**
 
-<img data-src="/img/native-webview-reactive-flutter/3.png" class="lazyload" />
+![gambar](/images/native-webview-reactive-flutter/3.png)
 
 Pada aplikasi webview kita membuat HTML dan menampilkannya di WebView yang terdapat di platform os. Javascript memerlukan bridge / jembatan yang memungkinkan dia bisa mengakses kamera, gps, dll. dengan adanya bridge ini menyebabkan masalah kinerja : lambat, memory tinggi, dll.
 
@@ -45,7 +47,7 @@ Awal teman saya menyebut `react native`, sepintas lewat dipikiran saya `JavaScri
 
 Sejarahnya ternyata pada tahun 2015, facebook membuat [React Native](https://facebook.github.io/react-native/) untuk menghadirkan manfaat tampilan gaya reaktif ke mobile app.
 
-<img data-src="/img/native-webview-reactive-flutter/4.png" class="lazyload" />
+![gambar](/images/native-webview-reactive-flutter/4.png)
 
 React Native cukup nikmat, tetapi karena JavaScript mengakses widget OEM dari OS harus melalui bridge dan Widget biasanya diakses cukup sering (hingga 60 kali per detik misalkan animasi, transisi, atau ketika user scroll atau touch layar) dapat menyebabkan masalah performa juga. Coba saja buka facebook scroll ke bawah selama 10 menit atau lebih di android anda, selalu membuat hang lalu aplikasi tertutup. [Artikel ini menjelaskan lebih dalam tentang React Native](https://medium.com/@talkol/performance-limitations-of-react-native-and-how-to-overcome-them-947630d7f440)
 
@@ -59,7 +61,7 @@ Pada Flutter juga menggunakan tampilan *reactive-style*. Flutter mengunakan pend
 
 Dengan fakta tersebut membuat Flutter `menarik` dan `pantas dicoba`, tetapi ada sesuatu yang jauh *lebih revolusioner* tentang Flutter, tentang cara menerapkan konsep `widget`.
 
-<img data-src="/img/native-webview-reactive-flutter/5.png" class="lazyload" />
+![gambar](/images/native-webview-reactive-flutter/5.png)
 
 `Widget` adalah elemen yang memengaruhi dan mengontrol tampilan dan antarmuka ke aplikasi, tidak berlebihan untuk mengatakan bahwa widget adalah salah satu bagian `terpenting` dari aplikasi mobile. Flutter memiliki arsitektur baru yang mencakup widget yang lebih baik, cepat, dan dapat disesuaikan serta dapat diperluas. Ya, Flutter *tidak* menggunakan `widget OEM` (atau `DOM WebViews`), ia menyediakan `widget sendiri`, menarik bukan? *Gak pakai yang native tapi bukan webview via DOM juga*.
 

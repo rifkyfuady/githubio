@@ -7,7 +7,8 @@ draft: false
 type: post
 
 tags:
-    - tag
+    - gammu
+    - ubuntu
 
 image: ""
 description: ""
@@ -28,7 +29,7 @@ Berikut langkah-langkah instalasinya :
 sudo apt-get update
 sudo apt-get install gammu gammu-smsd
 ```
-<img data-src="/img/gammu-sms-gateway/1.png" class="lazyload" />
+![gambar](/images/gammu-sms-gateway/1.png)
 
 
 - Kemudian setting `gammu`-nya. Masukkan perintah :
@@ -36,7 +37,7 @@ sudo apt-get install gammu gammu-smsd
 ```bash
 gammu-config
 ```
-<img data-src="/img/gammu-sms-gateway/2.png" class="lazyload" />
+![gambar](/images/gammu-sms-gateway/2.png)
 
 Akan tampil menu untuk konfigurasi `gammu`. Kita akan mengubah ini dengan kongurasi yang `benar` sesuai `modem` yang digunakan.
 
@@ -46,7 +47,7 @@ Akan tampil menu untuk konfigurasi `gammu`. Kita akan mengubah ini dengan kongur
 ```bash
 dmesg | grep tty
 ```
-<img data-src="/img/gammu-sms-gateway/3.png" class="lazyload" />
+![gambar](/images/gammu-sms-gateway/3.png)
 
 Nanti akan muncul `port` yang terhubung dengan modem. Jika tidak muncul, mungkin modem `belum ditancapkan` atau anda perlu `menginstall driver` modem tersebut. Langkah ini bertujuan untuk melihat apakah modem `sudah` `terdeteksi` pada komputer atau `belum`.
 
@@ -55,7 +56,7 @@ Nanti akan muncul `port` yang terhubung dengan modem. Jika tidak muncul, mungkin
 ```bash
 port = /dev/ttyUSB0
 ```
-<img data-src="/img/gammu-sms-gateway/4.png" class="lazyload" />
+![gambar](/images/gammu-sms-gateway/4.png)
 
 `ttyUSB0` disesuaikan dengan hasil `dmesg | grep tty`. 
 
@@ -64,14 +65,14 @@ port = /dev/ttyUSB0
 ```bash
 connection = at115200
 ```
-<img data-src="/img/gammu-sms-gateway/5.png" class="lazyload" />
+![gambar](/images/gammu-sms-gateway/5.png)
 
 - `Logfile` kita isi dengan `path` di mana kita ingin menyimpan `log` *(informasi)* dari `gammu`. Saya taruh di `/var/log/gammulog`
 
 ```bash
 logfile = /var/log/gammulog
 ```
-<img data-src="/img/gammu-sms-gateway/6.png" class="lazyload" />
+![gambar](/images/gammu-sms-gateway/6.png)
 
 
 - Untuk `logformat` saya pilih `textdate`. Nantinya, `log` `gammu` akan menyimpan informasi `teks` beserta `tanggal` dan `jam` kejadianya.
@@ -79,14 +80,14 @@ logfile = /var/log/gammulog
 ```bash
 logformat = textdate
 ```
-<img data-src="/img/gammu-sms-gateway/7.png" class="lazyload" />
+![gambar](/images/gammu-sms-gateway/7.png)
 
 
 - Setelah itu `save`, dan konfigurasi `gammu` tersebut akan tersimpan di file `.gammurc` pada direktori home user yang kita gunakan.
 
-<img data-src="/img/gammu-sms-gateway/8.png" class="lazyload" />
+![gambar](/images/gammu-sms-gateway/8.png)
 
-<img data-src="/img/gammu-sms-gateway/9.png" class="lazyload" />
+![gambar](/images/gammu-sms-gateway/9.png)
 
 
 - Kita matikan dulu `service` `gammu-smsd`. Kenapa? Karena jika `service` tersebut berjalan, kita tidak bisa menggunakan perintah `gammu` di `terminal`. Masukkan perintah :
@@ -106,7 +107,7 @@ sudo gammu --identify
 ```bash
 sudo gammu sendsms TEXT +6285326967372 -text "ini pesan gammu"
 ```
-<img data-src="/img/gammu-sms-gateway/10.png" class="lazyload" />
+![gambar](/images/gammu-sms-gateway/10.png)
 
 Jika `berhasil` mengirim `SMS`, berarti semua settingan `berhasil`. Tapi bila kita `gagal` mengirim `SMS`, coba `periksa` settingan `port` pada konfigurasi `gammu`. Atau ulangi cara di atas dari `dmesg | grep tty` dan jangan lupa ganti `port`-nya. Jika semua `port` yang ada sudah kita coba tetapi masih `gagal`, coba ganti `connection`-nya.
 
@@ -116,7 +117,7 @@ Jika `berhasil` mengirim `SMS`, berarti semua settingan `berhasil`. Tapi bila ki
 ```bash
 sudo gedit /etc/gammu-smsdrc
 ```
-<img data-src="/img/gammu-sms-gateway/11.png" class="lazyload" />
+![gambar](/images/gammu-sms-gateway/11.png)
 
 - Sesuaikan `konfigurasi` seperti ini :
 
@@ -147,7 +148,7 @@ password = rahasia
 database = terserah
 ```
 
-<img data-src="/img/gammu-sms-gateway/12.png" class="lazyload" />
+![gambar](/images/gammu-sms-gateway/12.png)
 
 
 - `Simpan` dan jangan lupa untuk `menjalankan` kembali `service` `gammu` dengan perintah :
