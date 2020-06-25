@@ -1,0 +1,48 @@
+<head>
+    <title> {{.Site.Params.author}}{{ with .Title }} | {{ . }}{{ end }} </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Rifky Fuady Programmer Web Developer Android Developer"> 
+    <meta property="og:url" content="{{ .Site.Params.baseurl | absURL }}"> 
+    <meta property="og:title" content="Decode Ideas, Discover Potential"> 
+    <meta property="og:description" content="Rifky Fuady Programmer Web Developer Android Developer"> 
+    <meta property="og:image" content="{{ .Site.Params.baseurl | absURL }}images/preview.png"> 
+    <meta property="og:site_name" content="Rifky Fuady"> 
+    <meta property="og:ttl" content="3600">
+    {{- hugo.Generator -}}
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    {{ $style := resources.Get "css/style.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous" type="text/css">
+    {{ range .Site.Params.customCss -}}
+    <link rel="stylesheet" href="{{ . | absURL }}" type="text/css">
+    {{- end }}
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="{{ .Site.Params.favicon | absURL }}favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.Params.favicon | absURL }}apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ .Site.Params.favicon | absURL }}apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ .Site.Params.favicon | absURL }}apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ .Site.Params.favicon | absURL }}apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ .Site.Params.favicon | absURL }}apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ .Site.Params.favicon | absURL }}apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ .Site.Params.favicon | absURL }}apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ .Site.Params.favicon | absURL }}apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ .Site.Params.favicon | absURL }}apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon | absURL }}favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon | absURL }}favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon | absURL }}favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon | absURL }}favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon | absURL }}favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Rifky&nbsp;Fuady"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="{{ .Site.Params.favicon | absURL }}mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="{{ .Site.Params.favicon | absURL }}mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="{{ .Site.Params.favicon | absURL }}mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="{{ .Site.Params.favicon | absURL }}mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="{{ .Site.Params.favicon | absURL }}mstile-310x310.png" />
+    <link rel="canonical" href="{{ .Permalink }}">
+    {{ $anatole := resources.Get "js/anatole-header.js" }}
+    {{ $secureJS := $anatole |  resources.Minify | resources.Fingerprint }}
+    <script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous"></script>
+    {{ template "_internal/google_analytics.html" . }}
+</head>

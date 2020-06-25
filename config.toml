@@ -1,0 +1,70 @@
+baseurl = "https://rifkyfuady.github.io"
+languageCode = "id-id"
+defaultContentLanguage = "id"
+title = "Website of Rifky Fuady"
+theme = "anatole"
+summarylength = 10
+enableEmoji = true
+timeout = 60000
+
+disqusShortname = "rifkyfuady-github-io"
+googleAnalytics = "UA-168512473-1"
+
+[params]
+baseurl = "/"
+title = "Rifky Fuady"
+author = "Rifky Fuady"
+description = "Good programmer with great habits"
+profilePicture = "images/profil.jpg"
+keywords = ""
+favicon = "favicons/"
+customCss = ["css/custom.css"]
+mainSections = ["post"]
+
+## Social links
+[[params.socialIcons]]
+icon = "fa-github"
+title = "GitHub"
+url = "https://github.com/rifkyfu32"
+
+[[params.socialIcons]]
+icon = "fa-envelope"
+title = "e-mail"
+url = "mailto:mi.rifky.fuady@gmail.com"
+
+[[params.socialIcons]]
+icon = "fa-glide-g"
+title = "dicoding"
+url = "https://www.dicoding.com/users/57163"
+
+[[params.socialIcons]]
+icon = "fa-twitter"
+title = "twitter"
+url = "https://twitter.com/Fuu_ady"
+
+[[params.socialIcons]]
+icon = "fa-instagram"
+title = "instagram"
+url = "https://www.instagram.com/fuadyrifky"
+
+## Menu items
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 200
+  identifier = "posts"
+  url = "/post/"
+
+  [[menu.main]]
+  name = "Portofolio"
+  weight = 300
+  identifier = "portofolio"
+  url = "/portofolio/"
